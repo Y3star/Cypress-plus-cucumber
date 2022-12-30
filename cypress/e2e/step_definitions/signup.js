@@ -28,7 +28,7 @@ When(
 );
 
 Then("All fields are valid on sign up page then screenshot page", () => {
-    signUpPage.screenshotElement(); // we have error because i have block all my account its normal =)
+    signUpPage.screenshotElement(); 
 });
 
 Then(

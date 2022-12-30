@@ -13,11 +13,11 @@ class MainPage {
         bottomPricingMenu: () =>
             cy.get('[data-e2e="Footer--navItem-pricing"] ul'),
         bottomProductMassive: () =>
-            cy.get('[data-e2e*="products"] ul > li').each(() => {}), //forEach selector
+            cy.get('[data-e2e*="products"] ul > li').each(() => {}), 
         bottomResourcesMassive: () =>
-            cy.get('[data-e2e*="resources"] ul > li').each(() => {}), //forEach selector
+            cy.get('[data-e2e*="resources"] ul > li').each(() => {}), 
         bottomPricingMassive: () =>
-            cy.get('[data-e2e*="pricing"] ul > li').each(() => {}), // forEach selector
+            cy.get('[data-e2e*="pricing"] ul > li').each(() => {}), 
         inputEmailMainPage: () => cy.get('[type="email"]'),
     };
     goto() {
