@@ -7,11 +7,10 @@
     "test": "cypress open",
     "cypress:runner": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run",
-    "cypress:execution-tags": "cypress run --env tags=@mobile",
     "cypress:execution-allure": "cypress run --env allure=true",
     "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
     "allure:report": "allure generate allure-results --clean -o allure-report",
-    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
+    "allure:server": "allure serve allure-results"
   },
   "author": "Eduard Maievskyi",
   "license": "ISC",

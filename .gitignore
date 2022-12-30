@@ -1,5 +1,5 @@
 node_modules/
-/cypress/videos/
-/cypress/fixtures/
+cypress/videos/
+cypress/fixtures/
 /allure-results/
-/cypress/screenshots/
+cypress/screenshots/

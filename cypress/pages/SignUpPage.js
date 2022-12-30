@@ -7,7 +7,6 @@ class SignUpPage {
         checkBoxIwant: () =>
             cy.get('[aria-label="signup-form"] div:nth-child(2) rect'), //".sc-25ef9dc0-0.qPmCp rect"; //old selector
         createAcc: () => cy.get('div button[type="submit"]'),
-        // errors
         errorEmail: () => cy.get("#email_error"),
         errorPass: () => cy.get("#password_requirements"),
         errorFullName: () => cy.get("#full_name_error"),
