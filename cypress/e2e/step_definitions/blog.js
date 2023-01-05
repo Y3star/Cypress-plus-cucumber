@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { blogPage } from "@pages/BlogPage";
 
-Given("User open site {string} and close cookeis", (url) => {
+Given("User open site {string} and close cookies", (url) => {
     cy.visit(url);
     cy.get('[aria-label="close and deny"]').click();
 });

@@ -4,7 +4,7 @@ class SignUpPage {
         passwordInput: () => cy.get("#password"),
         fullNameInput: () => cy.get("#full_name"),
         checkBoxIAgree: () => cy.get('[aria-labelledby="terms-label"] rect'), //".sc-26f7330-5.lBxvj rect"; //old selector
-        checkBoxIwant: () =>
+        checkBoxIWant: () =>
             cy.get('[aria-label="signup-form"] div:nth-child(2) rect'), //".sc-25ef9dc0-0.qPmCp rect"; //old selector
         createAcc: () => cy.get('div button[type="submit"]'),
         errorEmail: () => cy.get("#email_error"),
@@ -22,7 +22,7 @@ class SignUpPage {
         this.elements.fullNameInput().type(fullname != "" ? fullname : " ");
         this.elements.passwordInput().type(password);
         this.elements.checkBoxIAgree().click();
-        this.elements.checkBoxIwant().click();
+        this.elements.checkBoxIWant().click();
         this.elements.createAcc().click();
     }
 }
